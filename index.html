@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="content/icons/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="content/fonts/converted-fonts (2)/Tajawal-Regular.otf"> -->
+    <link href="http://fonts.cdnfonts.com/css/tajawal" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7396ee3ed8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class=" first-header">
+            <div class="custom first-header-auth">
+            <ul >
+                <li class="any-ques">هل لديك أي أسئلة</li>
+                <li><i class="fa-solid fa-phone-flip"></i>
+                <a href="">01012345678</a></li>
+
+                <li><i class="fa-solid fa-envelope"></i>
+                <a href="">sales@elhadaryta.com</a></li>
+            </ul>
+
+            <ul>
+               <li onclick="openSignup(event)"><a>تسجيل حساب</a></li>
+               <li onclick="openSignin(event)"><a>تسجيل دخول</a></li>
+            </ul>  
+        </div>
+        <section class="form-sec" onclick="closeSignup(event)">
+        <form name="signup" method="get" novalidate class="header-signup">
+            <div>
+                <h2>تسجيل حساب جديد</h2>
+            <input type="text" name="username" placeholder="اسم المستخدم" required> <br>
+            <input type="email" name="email" placeholder="البريد الالكتروني" required><br>
+            <input type="password" name="password" placeholder="كلمة السر" required><br>
+            <input type="password" name="confirmPassword" placeholder="تأكيد كلمة السر" required><br>
+            <label for="country">*</label><br>
+            <input id="country" type="text" name="country" placeholder="الدولة"><br>
+            <label for="city">*</label><br>
+            <input id="city" type="text" name="city" placeholder="المحافظة"><br>
+            <p for="date">*</p><br>
+            <input id="date" type="text" name="date" placeholder="تاريخ الميلاد"><br>
+            <!-- <label for=""> want to become an instructor?</label> -->
+            <label for="" class="label-checkbox"><input type="checkbox">want to be become an instructor?</label><br>
+            <input id="submit" type="submit" value="تسجيل حساب جديد "><br>
+            <p >هل انت عضو حالي ؟<span> تسجيل دخول</span></p>
+        </div>
+          </form>
+        </section>
+        <section class="form-sec2" onclick="closeSignin(event)">
+            <form action="" class="header-signin">
+            <div>
+            <h2>تسجيل دخول الي حسابك</h2>
+            <input type="text" name="username" placeholder="اسم المستخدم" required> <br>
+            <input type="password" name="password" placeholder="كلمة السر" required><br>
+            <span>هل نسيت كلمة السر؟
+                <label for=""><input type="checkbox" >تذكرني</label>
+            </span>
+            <input id="submit" type="submit" value="تسجيل دخول "><br>
+            <p >ليس لديك حساب؟<span>تسجيل حساب جديد</span></p>
+
+
+             </div>
+            </form>
+          </section>
+        </header>
+        <header class="second-header ">
+            <div class="custom second-header-all">
+
+        <section class="header-navbar custom">
+            <img class="logo" src="content/images/logo.png" alt="">
+
+            <span class="header-slider">
+                <span class="slider-rigth"></span>
+                <span class="slider-left"></span>
+            </span>
+            <nav class="open">
+
+               <a href="#">الرئيسية</a>
+               <a href="#">الدورات</a>
+               <a href="#">المسابقة الدولية</a>
+               <a href="#">الشهادات</a>
+               <a href="#">من نحن</a>
+               <a href="#">المدونة</a>
+               <a href="#">اتصل بنا</a>
+               <a onclick="searchFunc()"><i class="fa-solid fa-magnifying-glass"></i></a>
+               <div class="search-sec" onclick="searchFuncClose(event)">
+
+                <div>
+               <input type="search" class="search-input" placeholder="search courses...">
+            </div>
+            </div>
+            </nav>
+            <span class="nav-icon">
+            <span class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </span>
+        </section>
+        <div class="second-header-title">
+
+        <h1 class="header-first-title">أكاديمية الحضري</h1>
+        <h1 class="header-second-title">أحدث كورسات الحساب الذهني</h1>
+            <button class="header-submit">اشترك الآن</button>
+        </div>
+        <section class="header-aside custom">
+            <aside class="custom" >
+                <div>
+                <img src="content/images/logo-top-1.png" alt="">
+            </div>
+                <h2>كورسات مسجلة بجودة عالية
+                    <br> courses
+                </h2>
+            </aside>
+            <aside class="custom" >
+                <div>
+                <img src="content/images/logo-top-2.png" alt="">
+            </div>
+                <h2>ابدأ التدريب الآن 
+                    <br> START .......... TRAINING NOW
+
+                </h2>
+            </aside>
+            <aside class="custom" >
+                <div>
+                <img src="content/images/logo-top-3.png" alt="">
+            </div>
+                <h2>المسابقة الدولية 
+                    <br> join .......... international compition
+                </h2>
+            </aside>
+        </section>
+        </div>
+        </header>
+        <main class="custom">
+            <h2 class="main-rigth">أحدث الدورات</h2>
+            <div class="main-all-sections">
+            <section class="main-section">
+                
+                    <img class="main-lesson-img" src="content/images/2.jpg" alt="">
+                    <figure>
+                    <figcaption><a href="#">mohamed elhadaryta</a></figcaption>
+                    <figcaption>B1 MATH 2</figcaption>
+                    <br><a class='border-top' href="#"><span>0 </span>mohamed elhadaryta</a>
+                   
+
+                </figure>
+            </section>
+            <section class="main-section hide-mobile">
+                
+                    <img class="main-lesson-img" src="content/images/2.jpg" alt="">
+                    <figure>
+                    <figcaption><a href="#">mohamed elhadaryta</a></figcaption>
+                    <figcaption>B1 MATH 3</figcaption>
+                    <br><a class='border-top' href="#"><span>1 </span> mohamed elhadaryta</a>
+                    
+
+                </figure>
+            </section>
+            <section class="main-section hide-mobile">
+                
+                    <img class="main-lesson-img" src="content/images/2.jpg" alt="">
+                    <figure>
+                    <figcaption><a href="#">mohamed elhadaryta</a></figcaption>
+                    <figcaption>B1 MATH 4</figcaption>
+                    <br><a class='border-top' href="#"><span>2 </span>mohamed elhadaryta</a>
+                  
+                </figure>
+            </section>
+            <aside class="international-compition">
+                <h4><a href="#">INTERNATIONAL COMPITION</a></h4>
+                <div>
+                    <a href="#">mohamed elhadaryta</a>
+                    <h3>INTERNATIONAL COMPITION</h3>
+                    <br><a class='border-top' href="#"><span>164 </span>mohamed elhadaryta</a>
+                    
+
+                </div>
+                
+            </aside>
+            </div>
+            <!-- <div class="main-center">
+                <h2>يمكن الدخول الي المسابقة الدولية</h2>
+                <button class="main-center-btn">الانتقال الي المسابقة الدولية</button>
+            </div> -->
+        </main>
+        <section class="registering-sec-all">
+            <div class="registering-sec-bg-color">
+        <section class="registering-sec custom">
+            <aside class="registering-sec-form">
+                <div>
+                <h2>
+                    اشترك الآن واحصل علي المزيد من الخصومات
+                </h2>
+                <form action="">
+                    <input type="text" placeholder="Your Name*">
+                    <input type="email" placeholder="Email*">
+                    <input type="text" placeholder="Phone*">
+                    <input type="submit" value="GET IT NOW" class="submit">
+                </form>
+            </div>
+            </aside>
+            <aside >
+            <h2>سجل الآن <span class="regist-and-offers">واحصل علي آخر العروض والخصومات</span></h2>
+            <h1>اشترك الآن</h1>
+            <section class="regist-time">
+                <div class="regist-time-div">00<span> يوم</span></div>
+                <div class="regist-time-div">00<span> ساعة</span></div>
+                <div class="regist-time-div">00<span> دقيقة</span></div>
+                <div class="regist-time-div">00<span> ثانية</span></div>
+
+            </section>
+        </aside>
+        </section>
+        </div>
+        </section>
+        <section class="new-articles">
+        <section class=" new-articles-bg-color">
+            <div class="custom center">
+            <section class="new-articles-sec1">
+            <h2>أحدث المقالات</h2>
+            <p>بعض المقالات عن الحساب الذهني وفوائده</p>
+        </section>
+        <section class="new-articles-sec2">
+            <aside class="none-except-desktop"></aside>
+            <aside>
+                <figure>
+                    <img src="content/images/2.jpg" alt="">
+                    <figcaption>حقا العبقرية ممكن صناعتها</figcaption>
+                    <button>MOHAMED elhadaryta . 30 يوليو,2021</button>
+                </figure>
+            </aside>
+            <aside>
+                <figure>
+                    <img src="content/images/2.jpg" alt="">
+                    <figcaption>ما هو الحساب الذهني</figcaption>
+                    <button>ADMIN . 30 يوليو,2021</button>
+                </figure>
+            </aside>
+        </section>
+        </div>
+        </section>
+    </section>
+        <!-- <section>
+            <h2>ماذا يقول المتدربين</h2>
+            <div>
+                <img src="content/images/0.jpg" alt="">
+            <h3>احمد ناصر</h3>
+             <h4>متدرب</h4>
+             
+            </div>
+            <div>
+                <img src="content/images/0.jpg" alt="">
+            <h3>احمد ناصر</h3>
+             <h4>متدرب</h4>
+            </div><div>
+                <img src="content/images/0.jpg" alt="">
+            <h3>احمد ناصر</h3>
+             <h4>متدرب</h4>
+            </div><div>
+                <img src="content/images/0.jpg" alt="">
+            <h3>احمد ناصر</h3>
+             <h4>متدرب</h4>
+            </div>
+        </section> -->
+        <footer class="fixed-footer ">
+            <div class="custom fixed-footer-all">
+            <div class="fixed-footer-content">
+            <aside class="first-section-fixed">
+                <img class="logo" src="content/images/logo.png" alt="">
+                <ul type="none">
+                <li>
+                <a href="">sales@elhadaryta.com</a>
+                <span class="fa-solid fa-envelope"></span>
+                </li>
+                <li>
+                <a href="">01012345678</a>
+                <i class="fa-solid fa-phone-flip"></i>
+            </li>
+               </ul>
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-youtube"></i>
+                <div>
+                    <!-- <span class="fa-youtube"></span>
+                    <span class="fa-facebook"></span> -->
+                </div>
+            </aside>
+            <aside class="second-section-fixed">
+                <div>
+                <h3>روابط سريعة</h3>
+                <ul >
+                  <li>  <a href="">من نحن</a></li>
+                  <li> <a href="">المدونة</a></li>
+                  <li> <a href="">اتصل بنا</a></li>
+                  <li> <a href="">تسجيل كمدرس</a></li>
+                </ul>
+                </div>
+                </aside>
+                <aside class="second-section-fixed">
+                <div>
+                <h3>طرق الدفع</h3>
+                <img class="payment-img" src="content/images/1.png" alt="">
+                
+                </div>
+            </aside>
+                <!-- <hr><p><a href="#">Developed</a> by <a href="#">Nabzatech </a> All Rights Reserved © elhadary Academy .</p> -->
+
+
+           
+
+            <!-- <table style="table-layout:auto";>
+                <tr><th>روابط سريعة</th><th>طرق الدفع</th></tr>
+                <tr><td><a href="">من نحن</a></td><td rowspan="4"><img class="payment-img" src="content/images/1.png" alt=""></td></tr>
+                <tr><td><a href="">المدونة</a></td></tr>
+                <tr><td><a href="">اتصل بنا</a></td></tr>
+                <tr><td><a href="">تسجيل كمدرس</a></td></tr>
+                
+            </table> -->
+            </div>
+            <span>Developed by <a class="developed-by custom" href="#">amirasalah</a> All Rights Reserved © Academy .
+
+            </span>
+        </div>
+        
+        </footer>
+        <footer class="static-footer " >
+            <div class="custom static-footer-bg">
+            <div class="static-footer-content">
+            <h1>هل تريد ان تنضم الينا كمدرس؟</h1>
+            <p>انضم الي العديد من المدرسين واربح العديد من الامتيازات </p>
+            <button class="footer-submit">سجل الآن</button>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <div class="fixed-icons">
+        <section>
+        <i class="fa-solid fa-phone"></i>
+    </section>
+    <section>
+        <i class="fa-brands fa-whatsapp"></i> 
+    </section>  
+    <section> 
+        <i class="fa-solid fa-xmark"></i>
+    </section>
+    <section>
+        <i class="fa-solid fa-message-lines"></i>
+    </section>
+    </div>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
