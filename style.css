@@ -255,7 +255,7 @@ nav.open a:hover {
 }
 main {
     width: 100%;
-    height: 900px; 
+    height: 600px; 
 }
 main h4, main a{
 color: #337ab7;
@@ -321,7 +321,7 @@ text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 635px;
-    margin-top: 40px;
+    margin-top: 0px;
     vertical-align: middle;
 }
 .center{
@@ -335,10 +335,10 @@ text-align: center;
     color: whitesmoke;
 
 }
-figcaption{
+/* figcaption{
     
     text-align: center;
-}
+} */
 figcaption:hover{
     cursor:pointer;
 }
@@ -347,14 +347,17 @@ figcaption:hover{
     height: 635px;
 
 }
-.new-articles-sec1{
+/* .new-articles-sec1{
     vertical-align: middle;
-}
+} */
 .new-articles-sec2{
+    width: 100%;
+
     display: flex;
     align-content: center;
 }
 .new-articles-sec2 aside{
+    width: 100%;
     padding: 15px;
 }
 .none-except-desktop{
@@ -364,6 +367,17 @@ height: 220px;
 .new-articles-sec2 img{
     width: 370px;
     height: 220px;
+}
+.new-articles-sec2 figure button{
+    /* width: 100%; */
+    height: 30px;
+    background-color:rgb(255, 187, 0);
+    color: white;
+    /* border-color: rgb(255, 187, 0); */
+    padding: 5px;
+    /* margin: 25px; */
+    border: none;
+    text-align: center;
 }
 .registering-sec{
     height: 700px;
